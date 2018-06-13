@@ -1,0 +1,5 @@
+admin:
+  name: admin
+
+guest:
+  name: guest

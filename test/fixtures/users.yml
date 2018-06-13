@@ -1,0 +1,7 @@
+alice:
+  name: Alice
+  active: false
+
+bob:
+  name: Bob
+  active: true

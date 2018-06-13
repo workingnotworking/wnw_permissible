@@ -1,0 +1,3 @@
+admin_access_admin:
+  role: admin
+  permission: access_admin

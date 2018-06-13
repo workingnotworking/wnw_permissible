@@ -1,0 +1,3 @@
+bob_admin:
+  authorizable: bob (User)
+  role: admin
