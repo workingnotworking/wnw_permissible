@@ -1,6 +1,7 @@
 # Permissible
 Adds WNW-style authorization into a Rails app.
 
+[![Gem Version](https://badge.fury.io/rb/wnw-permissible.svg)](https://badge.fury.io/rb/wnw-permissible)
 [![Build Status](https://semaphoreci.com/api/v1/workingnotworking/wnw-permissible/branches/master/badge.svg)](https://semaphoreci.com/workingnotworking/wnw-permissible)
 
 ## Installation
