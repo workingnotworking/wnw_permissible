@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wnw-permissible (0.1.0)
+    wnw-permissible (0.1.1)
       rails (~> 5.0)
 
 GEM
@@ -124,4 +124,4 @@ DEPENDENCIES
   wnw-permissible!
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
