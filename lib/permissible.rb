@@ -1,4 +1,4 @@
-require "permissible/railtie"
+require "permissible/engine"
 
 module Permissible
   extend ActiveSupport::Concern
