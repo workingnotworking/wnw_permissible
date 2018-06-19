@@ -4,8 +4,7 @@ class Role < ApplicationRecord
   has_many :authorizations,   :dependent => :destroy
   has_many :role_limits,      :dependent => :destroy
 
-  validates :name, :presence => true, :uniqueness => true,
-    :length => { :maximum => 255 }
+  validates :name, :presence => true, :uniqueness => true
 
   def limit(attribute)
     role_limits.pluck(attribute).max

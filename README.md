@@ -74,8 +74,10 @@ Note that the column is a `:string`. The value contained in the column will be s
 Now decorate `RoleLimit` to declare that your new attribute should be serialized:
 
 ```ruby
-# app/decorators/role_limit_decorator.rb
-RoleLimit.class_eval do
+# app/models/role_limit.rb
+require_dependency WnwPermissible::Engine.config.root.join('app', 'models', __FILE__).to_s
+
+class RoleLimit
   serialize :searches
 end
 ```

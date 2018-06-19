@@ -1,5 +1,3 @@
-require "permissible/engine"
-
 module Permissible
   extend ActiveSupport::Concern
 

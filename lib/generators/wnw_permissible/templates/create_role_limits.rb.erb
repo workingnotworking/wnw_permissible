@@ -1,0 +1,11 @@
+class CreateRoleLimits < ActiveRecord::Migration<%= migration_version %>
+
+  def change
+    create_table :role_limits do |t|
+      t.references :role, :foreign_key => true
+
+      t.timestamps
+    end
+  end
+
+end

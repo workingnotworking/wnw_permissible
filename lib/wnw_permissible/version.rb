@@ -1,3 +1,3 @@
-module Permissible
+module WnwPermissible
   VERSION = '0.1.1'
 end
