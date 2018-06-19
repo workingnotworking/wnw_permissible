@@ -2,7 +2,7 @@ class CreateRoles < ActiveRecord::Migration<%= migration_version %>
 
   def change
     create_table :roles do |t|
-      t.string :name
+      t.string :name, :limit => 191
       t.text   :description
 
       t.timestamps

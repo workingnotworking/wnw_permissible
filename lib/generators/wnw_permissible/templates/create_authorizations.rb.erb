@@ -2,12 +2,14 @@ class CreateAuthorizations < ActiveRecord::Migration<%= migration_version %>
 
   def change
     create_table :authorizations do |t|
-      t.references :authorizable, :polymorphic => true
+      t.string  :authorizable_type, :limit => 191
+      t.integer :authorizable_id
       t.references :role,         :foreign_key => true
 
       t.timestamps
     end
 
+    add_index :authorizations, [:authorizable_type, :authorizable_id]
     add_index :authorizations, [:authorizable_id, :authorizable_type]
   end
 
