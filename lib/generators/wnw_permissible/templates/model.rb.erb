@@ -1,7 +1,7 @@
 # Created by WnwPermissible to contain any custom model code. It's safe to
 # delete this file if you do not need any custom functionality in the model.
 
-require_dependency WnwPermissible::Engine.config.root.join('app', 'models', __FILE__).to_s
+require_dependency WnwPermissible::Engine.config.root.join('app', 'models', '<%= config[:model] %>.rb').to_s
 
 class <%= config[:model].camelize %>
   # add custom model code here
