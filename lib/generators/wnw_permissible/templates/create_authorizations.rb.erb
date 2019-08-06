@@ -2,8 +2,8 @@ class CreateAuthorizations < ActiveRecord::Migration<%= migration_version %>
 
   def change
     create_table :authorizations do |t|
-      t.string  :authorizable_type, :limit => 191
-      t.integer :authorizable_id
+      t.string :authorizable_type, :limit => 191
+      t.bigint :authorizable_id
       t.references :role,         :foreign_key => true
 
       t.timestamps
