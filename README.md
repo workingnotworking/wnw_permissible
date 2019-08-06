@@ -8,7 +8,7 @@ Adds WNW-style authorization into a Rails app.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'wnw-permissible', :require => 'permissible'
+gem 'wnw_permissible', :require => 'permissible'
 ```
 
 And then execute:

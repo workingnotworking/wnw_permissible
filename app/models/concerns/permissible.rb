@@ -59,6 +59,8 @@ module Permissible
 
   # is method in the form of `role?`
   private def _role_match?(name)
+    return false if name.in? [:approved?, :confirmed?]
+
     name.to_s.match(PERMISSIBLE_ROLE_METHOD_REGEX) and
       Role.where(:name => name.to_s.chop).any?
   end
